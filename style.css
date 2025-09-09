@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fdf6e3;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100vw;
+}
+
+thead {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: white;
+}
+
+th {
+    padding: 0.5rem;
+}
+
+td {
+    padding: 0.7rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(hsla(120, 93%, 79%, 0.6), hsla(101, 100%, 65%, 0.6));
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(hsl(120, 20%, 95%, 0.6), hsl(120, 20%, 75%, 0.6));
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(hsl(40, 100%, 85%, 0.60), hsla(71, 100%, 65%, 0.6));
+}
