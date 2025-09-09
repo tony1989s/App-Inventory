@@ -6,6 +6,12 @@
 body {
     background-color: #fdf6e3;
     color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main h1 {
+    text-align: center;
 }
 
 table {
@@ -38,4 +44,60 @@ tr[class="to-read"] {
 
 tr[class="in-progress"] {
     background-image: linear-gradient(hsl(40, 100%, 85%, 0.60), hsla(71, 100%, 65%, 0.6));
+}
+
+tr[class="read"] span[class="status"] {
+    border: 0.1em solid hsl(105, 45%, 75%);
+    background-image: linear-gradient(hsl(120, 75%, 75%), hsl(120, 75%, 50%));
+}
+
+span[class="status"] {
+   padding: 0.4em 0.1em;
+    border-radius: 10% / 50%;
+    display: block;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 0.1em solid hsl(5, 100%, 45%);
+    background-image: linear-gradient(hsl(5, 100%, 75%), hsl(5, 100%, 50%));
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(hsl(40, 100%, 85%, 0.60), hsla(71, 100%, 65%, 0.6));
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 0.1em solid hsl(40, 90%, 40%);
+    background-image: linear-gradient(hsl(40, 90%, 75%), hsl(40, 90%, 50%));
+}
+
+span {
+    display: inline-block;
+}
+
+span[class^="rate"] > span{ 
+    width: 20%;
+    background-color: hsl(0, 0%, 100%);
+    height: 100%;
+    border: 0.1em solid hsl(0, 0%, 50%);
+    border-radius: 50%;
+    margin: 0.1em;
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(hsl(50, 100%, 70%), hsl(50, 100%, 50%));
+}
+
+span[class^="rate"] {
+    width: 7em;
+    height: 1.85em;
+    padding: 0.3em;
+}
+
+span[class~="one"] :first-child {
+    background-image: linear-gradient(hsl(50, 100%, 70%), hsl(50, 100%, 50%));
+}
+
+span[class~="two"] :nth-child(1), span[class~="two"] :nth-child(2) {
+    background-image: linear-gradient(hsl(50, 100%, 70%), hsl(50, 100%, 50%));
 }
